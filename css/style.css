@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --padding-container: 100px 0;
+    --color-title: #9b9b9b;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.png");
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #FFFFFF;
+}
+
+.hero::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../imagenes/primer\ piso.jpg');
+    background-size: 100% 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+.navcontainer {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navtittle {
+    font-weight: 300;
+}
+
+.navlink {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.navlinks {
+    margin-left: auto;
+    padding: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.navitems{ 
+    list-style: none;
+}
+
+/* Hero container */
+
+.herocontainer {
+    padding: 150px 0 0 0;
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.herotittle {
+    font-size: 3rem;
+}
+
+.heroparagraph {
+    margin-bottom: 20px;
+}
+
+.cta {
+    padding: 200px 0 0 0;
+    display: inline-block;
+    background-color: red;
+    justify-self: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 13px 15px;
+    border-radius: 6px;
+}
+
+/* About  */
+
+.about {
+    text-align: center;
+    z-index: -1;
+    animation: EntrardesdeIzq 3s ease;
+
+}
+
+.maintittle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.mainparagraph{
+    line-height: 1.7;
+    color: #FFFFFF;
+}
+
+.abouttittle {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.aboutparagraph2{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+.aboutmain{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    z-index: -1;
+}
+
+.aboutimg {
+    display: flex;
+    gap: 1em;
+    justify-items: center;
+    width: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.aboutpic {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@keyframes EntrardesdeIzq {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Sparta */
+
+.Sparta{
+    background-color: #000000;
+    opacity: 0.9;
+    background-image:  radial-gradient(#ffffff 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#ffffff 0.7000000000000001px, #000000 0.7000000000000001px);
+    background-size: 28px 28px;
+    background-position: 0 0,14px 14px;
+overflow: hidden;
+}
+
+.spartacontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.Spartapic {
+    max-width: 200px;
+    max-height: 350px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.Spartaimg {
+    width: 100%;
+    background-size: 100% 100%;
+    display: block;
+}
+
+.mainparagraph{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+
+.spartatexto {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.instalacionestxt {
+    color: var(--color-title);
+    font-size: 2rem;
+    text-align: center;
+}
+#galeria {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#galeria img {
+    width: 100%;
+}
+
+#galeria .foto {
+    width:25%;
+}
+
+#Contact {
+    background-color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 60px 0;
+}
+
+.contactxt {
+    color: var(--color-title);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#Contact i {
+    color: red;
+}
+
+.info {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+.info p {
+    margin: 20px;
+    display: flex;
+}
+
+.questions {
+    text-align: center;
+    
+}
+
+.questions-container {
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.subtitle {
+    color: #000000;
+    font-size: 2em;
+}
+
+.questionpadding {
+    padding: 0;
+    transition: padding .3s;
+    border: 1px solid red;
+    border-radius: 6px;
+
+}
+
+.questionpadding--add {
+    padding-bottom: 30px;
+}
+
+.questionanswer {
+    padding: 0 30px 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    overflow: hidden;
+}
+
+.questiontitle {
+    display: flex;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    color: #000000;
+    justify-content: space-between;
+}
+.questionarrow {
+    border-radius: 50%;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition: transform .3s;
+}
+
+.questionarrow--rotate {
+    transform: rotate(180deg);
+}
+
+.respuesta {
+    text-align: left;
+    height: 0;
+    transition: height .3s;
+}
+
+/* footer */
+
+.footer {
+    background-color: rgb(12, 12, 12);
+}
+
+.footertitle {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--color-title);
+}
+
+.footercopy {
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.copyright {
+    font-weight: 300;
+}
+
+@media (max-width:800px){
+    .herotittle{
+        font-size: 2.5rem;
+    }
+
+    .about {
+        gap: 2em;
+    }
+
+    .aboutimg:last-of-type {
+        grid-column: 1/-1;
+    }
+    
+    .spartacontainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+    .Spartapic {
+        grid-row: 1/2;
+        justify-content: center;
+    }
+
+    .footercopy {
+        flex-wrap: wrap;
+    }
+}
+

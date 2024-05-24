@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+opacity: 0.9;
+background-color: #000000;
+opacity: 0.9;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 4px ), repeating-linear-gradient( #ff000055, #ff0000 );
+}
+
+form {
+    padding: 50px 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: black;
+    width: 340px;
+    height: 800px;
+}
+
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: rgba(48, 48, 48, 1);
+    border: 2px solid;
+    color:  #9b9b9b;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #9b9b9b;
+}
+
+.formtxt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.formtxt a {
+    color: #9b9b9b;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9b9b9b;
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input {
+        padding: 15px
+    };
+}
